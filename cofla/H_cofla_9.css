@@ -1,0 +1,56 @@
+body{
+   background: rgb(231, 229, 118);
+
+}
+input{
+    display:block;
+    margin-top: 5px;
+    margin-left:30px;
+    width: 50%;
+    height: 35px;
+    border:none;
+    outline: none;
+    border-bottom:1px solid black;
+    transition: all 1s;
+}
+
+input:hover{
+    background-color:rgb(233, 233, 233);
+    border-left:1px solid rgb(255, 208, 0);
+    
+}
+form{
+    margin-top:26px;
+}
+.titulo{
+    position: relative;
+    top: 25px;
+    font-size: 28px;
+    padding-left: 10px;
+}
+.formulario{
+    width: 40%;
+    height: 300px;
+    margin-left:400px;
+    background-color:rgb(255, 251, 0);
+    box-shadow: 40px 20px 0px 0px rgba(0, 0, 0, 0.336);
+
+    border-left:20px solid rgb(0, 0, 0);
+}
+
+input[type="submit"]{
+    background:black;
+    color:#ffff;
+    outline:none;
+    border:none;
+}
+input[type="submit"]:hover{
+    border:1px solid rgb(255, 255, 255);
+}
+.error{
+    color:rgb(255, 28, 28);
+    margin:10px;
+}
+.success{
+    color:rgb(67, 224, 67);
+}

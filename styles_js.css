@@ -1,0 +1,223 @@
+
+*{
+    margin: 5px;
+}
+article{
+    margin: 50px;
+}
+.titulo{
+    border-top: 1px solid rgb(252, 217, 217);
+    font-size: 50px;
+    font-family: 'Syne Mono', monospace;
+    color:rgb(100, 30, 30);
+}
+.nav{
+    position: relative;
+    right: 10px;
+}
+
+
+p{
+    
+    padding-left: 8px;
+    border-left: 2px solid rgba(255, 0, 0, 0.308);
+    margin: 70px;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif
+}
+h2,h3{
+    size:20px;
+    border-bottom:2px solid rgba(218, 12, 12, 0.384);
+    margin: 5px;
+    border-left: 20px solid rgba(218, 12, 12, 0.336);
+}
+.nota{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-left:40px solid rgb(255, 251, 0);
+    padding: 20px;
+    width:70%;
+}
+.pat{
+    border-bottom:2px solid rgba(43, 12, 218, 0.384);
+    border-left: 20px solid rgba(50, 12, 218, 0.336);
+    color:rgb(80, 11, 11);
+    font-size:50px;
+}
+b{
+    border-bottom:2px solid rgba(51, 18, 197, 0.205);
+}
+.ejemplo{
+    color:rgb(0, 0, 0);
+    border-bottom:2px solid rgba(218, 204, 12, 0.384);
+    border-left: 20px solid rgba(255, 238, 0, 0.849);
+}
+a{
+    color:rgba(0, 4, 255, 0.603);
+    font-weight:bold;
+    border-left: 20px solid rgba(209, 231, 6, 0.925);
+}
+textarea{
+    border: none;
+    border: 2px solid rgb(255, 91, 91);
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+.busqueda1{
+    position: fixed;
+    right: 10%;
+    top:2px;
+    z-index: 1;
+}
+.search{
+   display: none;
+}
+.logo{
+    font-size:24px;
+    background-color:rgb(255, 255, 255);
+    border-radius:50px;
+    color:rgb(26, 22, 22);
+
+}
+
+.acced{
+    display: inline-block;
+    padding-left:15px;
+    border-radius: 20px;
+    height: 20px;
+    border:none;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    animation: input 2s 1;
+    outline: none;
+}
+@keyframes input{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 67%;
+    }
+}
+.acced2{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 250px;
+    border: 1px solid black;
+    border-bottom: 5px solid rgba(255, 0, 0, 0.493);
+    animation: box 1.5s 1;
+    z-index: 5;
+}
+@keyframes box{
+    0%{
+        width: 20px;
+    }
+    100%{
+        width:250px;
+    }
+}
+
+
+.box{
+    background-color:rgb(255, 196, 0);
+}
+.cont{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(255, 0, 0, 0.493);
+    border-radius:10px;
+    box-shadow: 3px 1px 3px rgba(66, 66, 66, 0.603);
+    position:fixed;
+    overflow-x: auto;
+    top:50px;
+    right:11%;
+    animation: caja 2s 1;
+    height: 200px;
+}
+@keyframes caja{
+    0% {
+        top: 200px;
+        height:0;
+    }
+    50%{
+        top: 50px;
+        height: 210px;
+    }
+}
+.stylCont{
+    background-color: transparent;
+    border-left: 3px solid rgba(238, 105, 105, 0.801);
+    border-right: 3px solid rgba(238, 105, 105, 0.801);
+    position:fixed;
+    width: 90px;
+    height: 200px;
+    top:20px;
+    right:15%;
+    animation: palo 2s 1;
+}
+@keyframes palo{
+    0% {
+        height:0;
+    }
+    50%{
+
+        height: 230px;
+    }
+}
+.stylCont0{
+    background-color: transparent;
+    border-left: 2px solid rgba(238, 105, 105, 0.801);
+    border-right: 2px solid rgba(238, 105, 105, 0.801);
+    position:fixed;
+    width: 90px;
+    height: 0px;
+    top:20px;
+    right:15%;
+    animation: palo0 2.5s 1;
+}
+@keyframes palo0{
+    0% {
+        height: 230px;
+    }
+    50%{
+        height: 0;
+       
+    }
+}
+.time{
+    display:none;
+    animation: cajatime 1s 1;
+    opacity: 10%;
+}
+@keyframes cajatime{
+    0% {
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 10%;
+    }
+}
+.text {
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    border: none;
+    font-size:18px;
+    animation: texto 2s 1;
+}
+@keyframes texto{
+    0% {
+        opacity: 0;
+    }
+}
+
+.error{
+    padding-top:50px;
+    color:red;
+}

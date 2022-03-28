@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_js.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/993f2d7384.js" crossorigin="anonymous"></script>
+    <title>Curso_js</title>
+  
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li><a href="../a_Paginaprincipal/introduciondelcuerso.html">Inicio</a>
+            <div id="contener" class="busqueda1">
+                <i class="fas fa-search logo" id="logo"></i>
+                <input type="text" placeholder="Busqueda" id="input_busqueda" class="search">
+            </div>
+            <div id="conector"></div>
+            <div id="contenedor" >
+                
+            </div>
+        </ul>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Curso_Js</h1>
+        </div>
+      
+        <article class="contenido" id="contenido">
+            <h3>Introduccion</h3>
+            <p > 
+                js se utiliza para que los sitios web sean dinamicos delado del cliente, delado del servidor se utiliza Nodejs.<br>
+                Tambien exieste libreria frontend como angular, react o vue.js, para un codigo mas obtimo , y sencillo.<br>
+                Tambien se puede utilizar para la inteligencia artificial, placas eletromicas (Jhonny five), aplicaciones movil, aplicaciones de escritorio,juegos, etc.<br>
+                Las fomas de enlasar y programar javascrip son simples, a continuacion decribiremos las maneras de enlasar html con js.<br>
+                <br>
+                En linea:<textarea rows="5" cols="50"> <h1 onclick="alert('chau')"></h1></textarea><br>
+                etiqueta script: <textarea rows="5" cols="50"><script type="text/javascrip">alert(hola)</script></textarea><br>
+                enlasar archivo externo: <textarea rows="5" cols="50">    <script src="../../javascrip/codigo.js"></script></textarea><br>
+            </p>
+            
+            <h3>Variables</h3>
+            <p> <b>una variable es un valor que se almasena en una memoria.</b><br>
+                tipos de datos<br>
+                String:cadena de texto<br>
+                number: numero<br>
+                Boolean: 0 y 1, o false, true<br>
+               <br>
+                en casos especiales de datos:<br>
+                Undefined: una varable sin definir<br>
+                Null: declaramos a una variable un valor basia.<br>
+                Nan:no es un numero, no se pude hacer la operacion<br>
+                <br>
+                hosting: orden de execucion<br>
+                prompt():mandar valor a una variable.<br>
+
+                <div class= "nota">Nota: cuando declaramos una variable, se la declara con var, let, const.<br>
+                </div>
+            </p>
+                <br>
+               
+            <h3>Operadores</h3>
+                <p> 
+                    Operadores arimetricos: toman valores numericos(ya sean literales o variables ) como sus operandos y retonan un valor numerico unico.<br>
+                    Operadores de asignacion: un Operador de asignacion asigna un valor al Operador de la izquierada basedo en el valor del operando de la dercha.<br>
+                </p>
+
+            <h3>Concatenacion</h3>
+            <p> 
+                Es unir dos cadenas de texto;<br>
+                ejemplo <br>
+                <textarea  cols="45" rows="9" class="concate">  
+                    saludo="hola";
+                    pregunta="como estas?";
+    
+                    frase= saludo + pregunta;
+    
+                    document.write(frase);</textarea>
+                           
+                    <br>
+                   <br>
+                    <div class="nota">Nota: podemos unir, concatenar con ${varable}. Podemos poner una cadena de texto (" "), para concatenar numeros.<br></div>
+            </p>
+
+            <h3>condecionales</h3>
+            <p>los condiciones es una sentencia que valida algo, como un bloque.<br>
+                if:<br>
+                else if: <br>
+                else:<br>
+            </p>
+
+            <h3 class="ejemplo">La historia de cofla</h3>
+            <p>Clofa quiere comprar un helado mas caro pero en el estante no aparese los presios.<br>
+                    Robert tiene $1.5 usd.<br>
+                    Pedro tiene $1.7 usd.<br>
+                    Clofa $3 usd.<br>
+
+                        <br>
+                        <b>Los prescios de los helados son los siguiente.</b><br>
+                            Palito de helado de agua : $0.6.<br>
+                            palito de helado de crema : $1 usd.<br>
+                            Bombon helado marca heladix : $1.6 usd.<br>
+                            bombon helado marca heladovich : $1.7 usd.<br>
+                            bombon helado marca heladrdo : $1.8 usd.<br>
+                            potecito de helado con confetis : $ 2.9usd.<br>
+                            pote de 1/4 kg -> $ 2.9 usd.<br>
+                            <br>
+
+                -ingresar el monto y mostrar el mas caro.<br>
+                -si, hay 2 o mas , mostrar ambos.<br>
+                -indicar el vuelto.<br>
+                <a href="../../javascrip/cap1/cap1.html">Solucion</a>
+            </p>
+
+            <h3>Arrays</h3>
+            <p>
+                Los array son para guardar muchos datos en una variable.<br>
+                ejemplo.<br>
+                <textarea cols="30" rows="5">
+                                variables =["pan","azucar","manzana"];
+                </textarea>    
+            </p>
+
+            <h3>Blucles</h3>
+            <p>   While:<br>
+                do while <br>
+                for:<br>
+                for in :for variable in variables,(nos devuelve el indise de los elementos)<br>
+                for of:nos devuelve los elemetos que se encuentra en la variable<br>
+                <div class="nota">nota:se pude nombrar a los for con "nombre:" antes de comenzar el for.<br></div></p>
+         
+
+            <h3>Funciones</h3>
+            <p> 
+                Las funciones son froma de reutilzar codigo.<br>
+                <textarea cols="70" rows="15">
+                    function saludar()
+                    { 
+                       let response= prompt("Hola como esta tu dia?"); 
+                    if(response== "bien")
+                    { 
+                        alert("me alegro");
+                    }else{alert("una pena");
+
+                    }
+        
+                    }
+                    //Llavamos a la funcion//saludar(); saludar();
+                </textarea>
+                <br>
+
+                <b>Parametros</b><br>
+                <textarea cols="70" rows="20">
+                    function saludar(num1+num2)
+                    { 
+                       let res=num1+num2;
+                        document.write(res)
+                    }
+        
+                    }
+
+                    //Llavamos a la funcion//
+
+                    saludar(11,2); 
+
+                    saludar(12,2);
+
+                    //mustra en pantalla//
+
+                    13
+                    14
+
+                </textarea>
+                <br>
+                <b>Funciones flecha</b>
+                las funciones flechas se retornan automaticamente.<br>
+                arguments: es cuando se agrega un argumento
+                nota: retur es para devoler un valor, combierte en un valor a una bloque, tambien finalzia el bloque.<br>
+            </p>
+
+            <h3 class="ejemplos">Historia de clofa 2</h3>
+            <p>      Un joven afortunado logro ganar el primer premio de la loteria, este joven decide hacer una fista para festejar que salio de la probreza con este millonario compro una maquina que daja pasar solamente a los mayores de edad, entre otras cosas.<br>
+
+                <br>
+                    -Dejar pasar solo a los mayores de edad.<br>
+                    -la primera persona que entre despues de las 12 am, no paga.<br>
+                    ¨<a href="../../javascrip/cap1/cap2.html">Solucion</a>
+    
+            </p>
+
+            <h3>programacion orientado a objetos</h3>
+           <p> 
+                Es un paradigma.<br>
+                class:crar objetos, <br>
+                objetos:son los resultados de las class.<br>
+                atributos: son las carrateristas,propiedades del objetos.<br>
+                metodos: son las cosas que pude hacer un objeto.<br>
+                contrustor: es una funcion que nos va acostruir las propiedades del objeto.<br>
+                instanciacion: la classe esta intanciada. <br>
+
+                <textarea cols="110" rows="15">
+                    class humano{ //objeto humano//
+                    constructor(edad,color,altura){//ponemos las carateristicas que tendra el humano//
+                            this.edad = edad;
+                            this.color = color;
+                            this.altura = altura;
+                            this.info= `tengo ${ this.edad }, y soy ${this.color}, mido ${this.altura}`;
+                        }
+                        verinfo(){
+                        
+                           document.write(this.info + "<br>");
+                       }
+                
+                 
+                }
+                
+                let Maria = new humano(20,"negro", 1.7);
+                let juan= new humano(30,"blaco", 1.25);
+                
+                
+                Maria.verinfo();
+                juan.verinfo();</textarea>
+           </p>
+           <h3>Carateristica de los POO</h3>
+           <p> 
+               Abstaccion: resumimos sus componentes lo mas posible.<br>
+
+               modularidad : es la capasidad de resolver un problema grande se parandolo por parte.<br>
+
+               encapsulamiento: cosiste que todos los datos sean privados.<br>
+
+               Polimorfimo: consiste en ver como un objeto se comporta de distinta manera ante el mismo metodo.<br>
+               <textarea cols="120" rows="25">
+                   class humano{ //objeto humano//
+                            constructor(genero,edad,color,altura){//ponemos las carateristicas que tendra el humano//
+                                this.genero=genero;
+                                this.edad = edad;
+                                this.color = color;
+                                this.altura = altura;
+                                this.info= `tengo ${ this.edad }, y soy ${this.color}, mido ${this.altura}`;
+                            }
+                            //metodo = funcion
+                            verinfo(){
+                            
+                            document.write(this.info + "<br>");
+                        }
+                            //polimofirmo
+                        cantar(){
+                            if (this.genero =="mujer") {
+                                    document.write("LaLALALa aaa vivaa la maraca!" + "<br>");       
+                            } else {
+                                document.write("e-eh no se cantar >.< porque soy " + this.color + "<br>");
+                            }
+                        }
+                        }
+                    
+                            let maria= new humano("mujer",20,"blanco", 1.7);
+                            let juan= new humano("macho",30,"negro", 1.25);
+                    
+                    
+                            maria.cantar();
+                            juan.cantar();;</textarea>
+
+               <h3>Otros conceptos de POO</h3>
+               herncia: una nueva class puede eredad las carateristicas de la anterior class y obtener nuvas carateristicas.<br>
+               metodos estatisticos: es un metodo que no nesesita que la classe se defina para poder ser creado.<br>
+
+               metodos accesores (gtter ,setter): los gte son para obtener un  valor y set modificarlo o definirlo.<br>
+
+               <textarea cols="150" rows="25">
+                   class humano{ //objeto humano//
+
+                        constructor(genero,edad,color,altura){//ponemos las carateristicas que tendra el humano//
+                            
+                        this.genero=genero;
+                        this.edad = edad;
+                        this.color = color;
+                        this.altura = altura;
+                        this.info= `tengo ${ this.edad }, y soy ${this.color}, mido ${this.altura} `;
+                    }
+                    //metodo = funcion
+                    verinfo(){
+                    
+                       document.write(this.info + "<br>");
+                   }
+            
+                
+            }
+            
+            //erencia
+            class Mujer extends humano{
+                constructor(genero,edad,color,altura,oficio){
+                    super(genero, edad, color,altura);
+                    this.oficio= null; //damos un valor nulo para despues modificarlo
+                }
+                //utilizamos la propiedades set para modificar
+                set modificaroficio(nombre){
+                    this.oficio= nombre;
+                }
+                //lo comvertimos en dato para que de todos modo nos muestre
+                get getoficio(){
+                    return this.oficio;
+                }
+                
+            }
+            
+            
+            const maria= new Mujer("mujer",20,"blanco", 1.7,"lavo platos");
+            const juan= new humano("macho",30,"negro", 1.25);
+            
+            
+            maria.modificaroficio = "soy hombre ahora";
+            document.write(maria.getoficio);</textarea>
+            
+           </p>
+        
+           <h3>Historia de clofa cap 3</h3>
+           <p> 
+               Cofla  entro a una tienda que venden celulares, de todos los modelos que hay disponible en la tienda, a cofla le llamo la antencion 3 telefonos.<br>
+                EL problema es que ningun vendedor sabe nada al respecto entonces no puede recomendarle absolutamente nada.<br>
+
+                crear solucion.<br>
+                -crear un sistema para mostrale a cofla las particularidades de los 3 celulares.<br>
+                -cada celulares debe tener color,peso,resolucion de camara ,resolucion de pantalla y memoria ram.<br>
+                -cada celulares debe poder prender, reiniciar, apagar, tomar foto y grabar.<br>
+           </p>
+
+           <a href="../../javascrip/cap1/cap3.html">Solucion</a>
+
+           <h3>Metodos de cadena</h3>
+           <p>
+               Los metos de cadenas son para modificar, encontrar texto.<br>
+               concat(): junta dos o mas cadenas y retorna una nueva.<br>
+               startsWith("caracter"):si una cadena empiza con los carateres de otra cadena, devuelve true, sino false.<br>
+               EndWith("carater"):si una cadena termina con los carateres de otra cadena, devuelve true, sino false.<br>
+               includes(): si una cadena puede entrarse dentro de otra cadena, devuelvetrue, sino false.<br>
+               indexOf(): devuelve el indice del primer carater de la cadena, si no existe, devuelve -1.<br>
+               lastIndexOf(): devuelve el ultimo indice del primer caracter de la cadena, sino existe, devuelve -1.<br>
+               <br>
+               padstar(): rellena las cadenas con la cantidad y lo que le pedimos que quiere que rellene.<br>
+               padEnd(): rellena los carateres pero poniendo al final de la cadena.<br>
+               repeat(): repite la misma cadena.<br>
+               <br>
+               split(): Divide la cadena como le pedimos.<br>
+               substring(): Nos retorna un pedazo de la cadena que seleccionamos.<br>
+               tolowercase(): convierte una cadena a minuscula.<br>
+               toUpperCase(): convierte una cadena a Mayuscula.<br>
+               toString(): Metodo devuelve una cadena que representa al objeto especifico.<br>
+               trim(): elimina los espacios en blanco al principio y al final de una cadena.<br>
+               trimEnd(): elimina los espacios al final d la fila.<br>
+               trimStar(): elimina los espacios al principio de la fila.<br>
+               valueOf(): retorna el valor primitivo de cada objeto string.<br>
+            </p>
+
+            <h3>Metodos de array</h3>
+            <p> 
+                <b>Tranformadores</b><br>
+                pop(): elimina  el ultimo elemento de un array  y lo devuelve.<br>
+                shift(): elimina el primer elemento de un array y lo devuelve.<br>
+                unshift(): añade uno o mas elemento al inicio de un array.<br>
+                push(): agrega un elemento al array al final de la lista.<br>
+                reverse():invierte el orden de los elementos  de un array.<br>
+                sort(): ordena los elementos de unarreglo (array) localmente y devuelve el arreglo ordenado.<br>
+                splice(star,elim, agregar): cambia el contenido de un array eliminado elementos existentes y/o agrega nuevos elementos.<br>
+
+                <b>Accesores</b><br>
+                Join(agregar la forma en la que quiere separar): une todos los elementos de una matriz (u objetos similar) en una cadena y la devuelve.
+                silice(): devuelve una parte del array dentro de un nuevo array empenzando por inicio  hasta fin,(fin no incluido).<br>
+
+                <b>De repeticiones</b><br>
+                filtre(): crea nuevo array con todos los elementos que cumplan la condiciones.<br>
+                forEach(): ejecuta la funcion indicada una vez por cada elemnto del array.<br>
+            </p>
+
+            <h3>objeto math</h3>
+            <p> 
+                <b>metodos</b><br>
+                sqrt(): operaciones de raiz.<br>
+                cbrt(): raiz cubica.<br>
+                max(): devuelve el numero mas grande.<br>
+                min(): devuelve el numero mas chiquito.<br>
+                random():devuelve un numero pseudo-aleatorio.<br> 
+                round(): rendodea entero.<br>
+                fround(): reando un numero desimal.<br>
+                ceil():redondea un nuemro hacia rriba.<br>
+                floor(): reondodea para baja.<br>
+                trunc(): elimina los desimales.<br>
+            </p>
+
+            <h3>console</h3>
+            <p> 
+                 asser(): aparece un mensaje de error en la consolo si la afirmacion es falsa. si laafirmacion es verdadera, no aparecenada.<br>
+                clear(): limpia la consola.<br>
+                error(): muestra un mensaje de error en la consola web.<br>
+                info(): emite un mensaje informativo.<br>
+                log(): muestra un mensaje en consola.<br>
+                table():esta funcion toma un agrumento obligatorio: data, que debe ser un array o un objeto,  parametros adicionales: columns y nos muestra una trabla enn consola.<br>
+                warn(): imprime un mensaje de advertencia en la consola web.<br>
+                dir(): despliga una lista interactiva de las propiedades del objeto js especificado.<br>
+                <br>
+                function de cont.<br>
+                <br>
+                cout(): resgistra el numero de veces que se llama a count(). esta function toma como argumento opcional una etiqueta.<br>
+                countReset(): resetea el contador console. count().<br></p>
+ 
+            <h3>Dom(documento objet model</h3>
+            <p>EL dom es una interfas que contiene todos los objetos estandares que nos permite representar  un documento html,cms,xcml
+                Nodo: un nodo en el DOm  es cualquier etiqueta del cuerpo, como el parrafo, el mismo body o incluso las etiquetas de una lista.<br>
+
+                *document: el  nodo document es ek nodo raiz, a partir del cual derivan  el resto de nodos.<br>
+
+                *Element: nodos definidos por etiqueta html.<br>
+                text: el texto dentro de un nodo element se considera un nuevo nodo hijo de tipo texto.<br>
+                attribute: los atributos de las etiquetas definidas nodos, (es js no los veremos cmo nodos,sino como informacion asociada al nodo de tipo elemet).<br>
+
+
+                <b> metodos de seleccion de de elementos</b>
+                <br>
+                getElementsById(): Seleccioon por id.<br>
+                getElementsByTagName(): Seleccio todas los elementos q coinciden con el nombre de las etiquetas especificas.<br>
+                querySelector(): devuelve el primera element que coincida con el grupo espisifico de selectores.<br>
+                querySelectorAll(): Devuelve todos los elementos que coinciden con el grupo que especifica de los selectores.<br>
+
+                <b>Definir,obtener y eliminar volares de atributos</b><br>
+                setAttribute(): modifica el valor de un atributo.<br>
+                getAttribute(): mobtiene el valor de un atributo.<br>
+                removerAttribute():remueve el valor de un atributo.<br>
+
+                <textarea  cols="100" rows="10">
+                let rongoedad = document.querySelector(".rangoEdad");
+                        //asignamos un atributo
+
+                rongoedad.setAttribute("type", "range");
+
+                        //devlvemos el atributo
+
+                let setA = rongoedad.getAttribute("type");
+
+                document.write(setA);
+                </textarea>
+                <h3>atributos globales</h3><br>
+               <p> contentEditable: indica si el elemento puede ser modificado por el usario (bool).<br>
+                dir: indica la direccionalidad del texto. <br>
+                hidden: indica si el elemento aun no es, o ya se, revelante.<br>
+                style: contiene declaraciones de estilo css para ser aplicadas al elemento. <br>
+                tabindex: indica si el elemento puede obtener un focus de input. <br>
+                title: contiene un texto con informacion relacionada al elemento al que pertenece. <br>
+                
+
+                <b>atributo de inputs</b><br>
+                className: muestra el nombre de la class.<br>
+                value: muestra el valor de value.<br>
+                type: pudes cambiar el type de js.<br>
+                accept: elejis en que formato se pude subir un archivo.<br>
+                from: el atributo from te permite enviar un archivo por fuera de la eiqueta from.<br>
+                minlength: minimo carateres que debe tener un input.<br>
+                placeholder: funciona para poner palabras fantasmas en el input.<br>
+                required: no te permite enviar casilla vasias.<br>
+
+
+                <b>atributo de style</b><br>
+                su uso es simple (elemento.style.propiedad= "valor").<br>
+
+                <br>
+                </p>
+                <p>
+                <b>Class, classList y metodos de classList</b><br>
+                add():añade una class.<br>
+                remove():remueve una class.<br>
+                item():devuelve la clase del indece especificado.<br>
+                contains(): verifica si ese elemento posee o no, la clase especificada.<br>
+                replace(): reemplaza una clase por otra.<br>
+                toggle(): si no tiene la classe especificada, la agrega, si ya la tiene, ka elimina.<br>
+                </p>
+              <h2>obtencion y modificacion de element</h2>
+              <br>
+              <p>
+                textContent: nos devuelve lo que hay dentro de la etiquea, pero no el html y sin nesecidad a recurir el estilo aplicado.<br>
+              innerText: susede lo mismo que textContent pero si le afecta el cambio de estilo, no  es recomendable usar.<br>
+              innerHtml: nos devulve todo el elemento y con las etiquetas.<br>
+              outerHtml: nos devulve el html completo del elemento.<br>
+              </p>
+                
+
+              <h2>creacion de elemento</h2>
+             <p>createElements(): Crea cualquier el elemento html, por ejemplo ("h1","li").<br>
+              CreatetextElement(): crea un texto elemento, se utiliza para poner texto dentro del elemento creado.<br>
+              ejemplo:<br>
+              <textarea cols="65" rows="15">const contener = document.querySelector(".contenedor");
+
+
+                const item= document.createElement("h1");
+                
+                const textNod = document.createTextNode("a");
+                item.appendChild(textNod);
+                contener.appendChild(item);
+                console.log(item)</textarea>
+                <br>
+              createDocumentFrangment(): optimiza la carga de elementos.<br>
+              appendChild():<br>
+              </p>
+
+              <h2>obtencion y modificacion de childs</h2>
+              <p>firstChild: seleciona al primer hijo.<br>
+              lastchild: sleciona al ultimo hijo.<br>
+              fistElementChild: seleciona al primer hijo pero toma los elementos.<br>
+              lastElementChild: seleciona al aultimo hijo pero toma los elementos.<br>
+              childNodes: devuelve todos los hijos en forma de nodo.<br>
+              children: devuelve todos los hijod pero solo los que tienen elemento.<br>
+              </p>
+
+              <h2>Metodo de childs</h2>
+              <p>
+              replaceChild(): remplasa <br>
+              removeChild(): remueve el hijo del contenedor<br>
+              hasChildNodes(): verifica si tienen un elemento hijo.<br>
+              <textarea cols="100" rows="15">const contener = document.querySelector(".contenedor");
+                const parrafo= document.createElement("P").innerHTML="Parafo"
+                const titulo= document.createElement("p");
+                titulo.innerHTML ="titulo";
+                
+                let titulo2 = document.querySelector(".h1");
+                
+                let respuesta =   contener.hasChildNodes();
+                
+                if(respuesta){
+                    document.write("el elemento exste");
+                }else{
+                    document.write("no papi")
+                }
+              </textarea>
+              <br>
+              </p>
+              <h2>Propiedades de parents</h2>
+              <p>
+                parentElements:devuelve el padre del hijo.<br>
+                parentNode:devuelve el padre del hijo.<br>
+              </p>
+                <h2>Propiedades de siblings</h2>
+                <p>
+                los hermonos son los los de la misma linia.<br>
+                nextSibling:devuelve el primero, siguiente hijo(hermano) de la misma linia.<br>
+                previousSibling: devuelve el ultimo hermano .<br> 
+                nextElementSibling:  devuelve el primer hemano pero tomando el elemento.<br>
+                previousElementSibling: devuelve el ultimo hermano pero tomando el elemento.<br>
+                closest(): devuelve el contenedor mas sercado y se trabaja con selectores.<br>
+            </p>
+            <br>
+            <h2 class="pat">Segunda parte del curso</h2>
+            <br>
+            <h3>introduccion a window</h3>
+            <p> 
+                
+                open(): Carga un recurso en el contexto de un nuevo navegador o uno ya existente.<br>
+                close():cierra la ventana actual o a la que se llamo.<br>
+                closed:indica si la ventana referenciada esta cerrara o no.<br>
+                name: obtiene /establece el nombre dek contexto de exploracion de la ventna.<br>
+                stop(): detiene la carga de recursos en el navegador actual.<br>
+                alert():muestra un cadro de alerta con el contenido espicifico.<br>
+                print(): abre el cuadro de dialogo para impirimir un documento.<br>
+                prompt("hola"): abre un cadro de dialogo con un mensaje que solicite el usario un dato (sting).<br>
+                confirm(): abre el cuadro de confirmacion.<br>
+            </p>
+                <div class="nota">Nota: todo las propiedades siguinetes son formas para modificar la ventana del navegador.</div><br>
+                <br>
+            <p>
+                <b>Screen</b>: devuelve una referencia al objeto de pantalla asociado con la ventana.<br>
+                <b>screenLeft</b>: devuelve la distancia horizontal entre el borde izquierado del navegador y el borde superior de la pantalla.<br>
+                <b>screenTop</b>: devuelve la distancia vertical entre el borde superior del navegador y el borde superior de la pantalla.<br>
+                <b>scrollx</b> devuelve el numero de pixeles que el documento se desplasa actualmente horizontalmente.<br>
+                <b>scrolly</b>: devuelve el numero de pixeles que el documento se desplasa actualmente vertical.<br>
+                <b>scroll()</b>:desplaza la ventana a un lugar particual en el documento.(con options y con posiciones).<br>
+                <br>
+                minimize(): minimiza la ventana.<br>
+                resizeBy(): cambia el tamaño de la ventana actual en cantidad espicificas.<br>
+                resizeTo(): redimensiona dinamicamente la ventana.<br>
+                moverBy(): Mueve la ventana en una ubicacion relativa.<br>
+                moveTo(): Mueve la ventana en una ubicacion absoluta.<br>
+                <br>
+                <div class="nota">Nota: todos se inicializa con "window.propiedad".<br></div>
+            </p>
+            <h2>Herramientas de Desarrollo del navegador(Chrome)</h2>
+            <h3>Pestaña Elements</h3>
+            <p>Para ver y trabajar con estaspestañas se requiere dar clik derecho - inspencionar.<br>
+                En la pestaña de element se hacen las siguientes cosas:<br>
+                -Filtro y busqueda por palabras claves.<br>
+                -Modificar, crear y eliminar etiquetas.<br>
+                -Modificar propiedades de css.<br>
+                -event listener.<br>
+                -Properties.<br>
+                -Opciones para copiar.<br>
+            </p>
+            <h3>Pestaña resources</h3>
+            <p>
+                -Ver y guardar archivo.<br>
+                -Información ofrecida.<br>
+                -cambios en tiempo real.<br>
+                -Snippets
+                -ejecutar codigo por fragmentos
+            </p>
+           <br>
+           <h2>Eventos</h2>
+           <p>
+                Event Listeners: Escucha de evento se aplica añadiendo una escucha con la propiedad (<b>addEventListener("nombre del evento", nombre de la funcion )</b>), hay que tener encuenta que de esa manera las funciones deben ser funciones comunes, pero si quieren utilizar funciones flechas se crea dentreo del parametro de addEventListener.<br>
+                ejemplo:<br>
+                <textarea cols="100" rows="12">
+                    const bottom = document.querySelector(".bottom");
+                    bottom.addEventListener("click",saludar);
+
+                    function saludar(){
+                        alert("hola")
+                    }
+                -----------------------------------------------------------------------
+                (function flecha)
+                bottom.addEventListener("click",()=>{
+                    alert("hola")
+                });
+                -----------------------------------------------------------------------</textarea>
+                <br>
+                objeto Event:para poder aceder a los objetos del event se utiliza el unico parametro que de event, el parametro puede llevar cualquier nombre, su itilidad es la misma que un this.<br>
+                ejemplo.<br>
+                <textarea cols="100" rows="5">
+                    
+                    bottom.addEventListener("click",( event )=>{
+                        console.log( event )
+                    });
+                </textarea>
+                <br>
+                flujo de evento: es el orden que se ejecuta un event.<b>En si se ejecuta del mas epecifico al menos especifico</b>.<br>
+                Para detener el flujo de los demas event se utilización la propiedad <b>event.stopPropagation()</b>.<br>
+                <textarea cols="100" rows="4">
+                    bottom.addEventListener("click",( event )=>{
+                        alert("hola");
+
+                        event.stopPropagation();
+                    });
+                </textarea> 
+                <br>
+           </p>
+           <h3>Event del Mouse</h3>
+           <p>
+               "click": cuando damos un click :V.<br>
+               "dblclick": cuando damos doble click.<br>
+               "mouseover": cuando el puntero se mueve sobre un elemento o sobre uno de sus cajas hijos. <br>
+               "mouseout": cuando el puntero se mueve fuera de un elemento o de su elemento secundario. <br>
+           </p>
+            
+           <p>
+               "contextmenu": ocurre cuando un click en el boton derecho en un elemento para abrir un menu.<br>
+               "mouseenter": ocuerre cuando un puntero se mueve sobre un elemento.<br>
+               "mouseleave": ocuerre cuando el puntero se mueve fuera del elemento.<br>
+               "mouseup": ocuerre cuando un usario suelta un boton del mouse sobre un elemento.<br>
+               "mousemove": ocuerre cuando el punterose se mueve mientras esta sobre un elemento.<br>
+           </p>
+           <h3>Eventos del teclado</h3>
+           <p>"Keydown": ocurre cuando una tecla se presiona.<br>
+            "keypress": ocurre cuando una tecla se deja de presionar.<br>
+            "onkeyup": ocurre despues que los dos eventos anteriores haya concluido consecutivamente.<br>
+           </p>
+           <h3>Eventos de la interfaz</h3>
+           <p>
+               "error": ocurre cuando sucede un error durante la carga de un archivo multimedia.<br>
+               "load": cuando un objeto se ha cargado.<br>
+               "beforeunload": antes de que el documento este a punto de descargarse.<br>
+               "unload":  una vez que se ha descargado una pagina.<br>
+               "resize": cuando se cambia el tamaño de la vista del documento.<br>
+               "scroll": cuando se desplaza la barra de desplazamiento de un elemento.<br>
+               "select": despues de que el usuario seleccione algun texto de < input> o < textarea><br>
+           </p>
+           <div class="nota">Nota:el load se llama al objeto window (window.addEventListener("load")), no es nesesario poner window., tambien se aplica a los evet "beforeunload","unload","resize","scroll" </div>
+           <br>
+           <h3>Timers</h3>
+           <p>
+               Los timers trabajan con tiempo.<br>
+               setTimeout(function): esta propiedad que trabaja con el tiempo de ejecucion.<br>
+               <textarea cols="100" rows="5">
+                   setTimeout(function()={
+                       document.write("hola")
+                   },2000)
+
+                   esta funcion mostrara un hola en pantalla cuando pase los 2s
+               </textarea>
+           <br>
+               setInterval(): ejecuta continuamente la funcion segun el tiempo dado.<br>
+               para cancelar el temporalizador se utiliza la propiedad <b>clearIntervale,clearTimeout</b>
+           </p>
+
+           <h2 class="ejemplo">Historia de clofa</h2>
+           <p>
+                Cofla reprobó 2 materias y ahora tiene que enviar un formulairio para resgistrarse en las materias que debe.<br>
+                -El formulairio debe contener nombre completo, mail, y meterias adeudadas.<br>
+                -Se debe validad que el mail sea valido, que los nombres sean reales.<br>
+                -Se debe enviar al servidor de manera pulida.<br>
+            
+                <a href="cofla/H_cofla_9.html">Solucion</a>
+           </p>
+           <p>
+               <b>pregunta B</b><br>
+               Los datos de cofla y el de otros alumnos fueron recibido y ya estan almacenados, ahora hay que crear un sistema que muestre esa informacion y se pueda asignar cueando rinden.<br>
+               -La interfaz debe ser agradable.<br>
+               -Debe contener todos los datos de manera estrocturada.<br>
+               -El profesor puede seleccionar en cual de las 2 semanas rinde el usario.<br>
+               -si el profesor confirma, los datos se debe actualizar y reemplazar el espacio de seleccion de semanas por semanas slecionadas.<br>
+               <a href="cofla/H_cofla_9B.html">Solucion</a>
+           </p>
+
+           <h2>Control de flujo y manejos de errores</h2>
+           <p></p>
+        </article>
+     
+    </main>
+    <script src="app.js"></script>
+</body>
+</html> 
