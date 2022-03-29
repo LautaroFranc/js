@@ -18,13 +18,15 @@ var Cont=contener2.innerHTML
 logo.addEventListener("click",(e)=>{                                           //    ACCION Cuando hacemos click en el icono de busqueda
     input_busqueda.classList.add("acced");
     contener.classList.add("acced2");
+    logo.classList.remove("color");
+
                                                   //Accion cuando scroll la pagina
         setTimeout(()=>{
                                                                
             
             addEventListener("scroll",(e)=>{                                              
             input_busqueda.classList.remove("acced");
-            contener.classList.remove("acced2")
+            logo.classList.add("color");
             })
         },20000)
      
