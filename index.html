@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,10 +46,15 @@
             
             <h3>Variables</h3>
             <p> <b>una variable es un valor que se almasena en una memoria.</b><br>
-                tipos de datos<br>
+                <div class= "nota">Nota: cuando declaramos una variable, se la declara con var, let, const.<br>
+                </div>
+            </p>
+            <h3>Tipos de datos</h3>
+              <p>
                 String:cadena de texto<br>
                 number: numero<br>
                 Boolean: 0 y 1, o false, true<br>
+                typeof: saber el tipo de dato.<br>
                <br>
                 en casos especiales de datos:<br>
                 Undefined: una varable sin definir<br>
@@ -59,8 +64,7 @@
                 hosting: orden de execucion<br>
                 prompt():mandar valor a una variable.<br>
 
-                <div class= "nota">Nota: cuando declaramos una variable, se la declara con var, let, const.<br>
-                </div>
+               
             </p>
                 <br>
                
@@ -367,7 +371,7 @@
                 reverse():invierte el orden de los elementos  de un array.<br>
                 sort(): ordena los elementos de unarreglo (array) localmente y devuelve el arreglo ordenado.<br>
                 splice(star,elim, agregar): cambia el contenido de un array eliminado elementos existentes y/o agrega nuevos elementos.<br>
-
+                .flat():devuelve una matriz concatenda,([1,2,[1,2]]=[1,2,1,2]).<br>
                 <b>Accesores</b><br>
                 Join(agregar la forma en la que quiere separar): une todos los elementos de una matriz (u objetos similar) en una cadena y la devuelve.<br>
                 silice(): devuelve una parte del array dentro de un nuevo array empenzando por inicio  hasta fin,(fin no incluido).<br>
@@ -690,7 +694,7 @@
                para cancelar el temporalizador se utiliza la propiedad <b>clearIntervale,clearTimeout</b>
            </p>
 
-           <h2 class="ejemplo">Historia de clofa</h2>
+           <h3 class="ejemplo">Historia de clofa</h3>
            <p>
                 Cofla reprobó 2 materias y ahora tiene que enviar un formulairio para resgistrarse en las materias que debe.<br>
                 -El formulairio debe contener nombre completo, mail, y meterias adeudadas.<br>
@@ -709,11 +713,105 @@
                <a href="cofla/H_cofla_9B.html">Solucion</a>
            </p>
 
-           <h2>Control de flujo y manejos de errores</h2>
-           <p></p>
+           <h3>Control de flujo y manejos de errores</h3>
+           <p>
+               -try..catch: Es una sentencia de manejo de error.<a href="https://youtu.be/xOinGb2MZSk?t=13863"    target="_blank" class="informacion"><i class="fas fa-angle-double-right"></i></a>  <br>
+               -try..catch..finally: El finally se ejecutada de todas formas, sobre escribe las condicion anterior.<br>
+               -throw: tira un error madificado.<br>
+               <textarea cols="50" rows="10">
+                   try{
+                       error
+                   }
+                   catch(e){
+                    console.log("el error es: " + e.message);
+                   }
+               </textarea>
+           </p>
+           <h3>Historia de clofa 10</h3>
+           <p> 
+               A) Las mesas de examenes ya finalizaron y el profesor le tomo un ultimo examen espacial a cofla, ya cofla hizo 2 pruebas mas, pero lamentablemente se rompio el sistema de inscripcion de notas, pero ende habra que crear una solucion a este problema.<br>
+               - Crear mini interfaz para introducior la nota.<br>
+               - validar q no haya errores.<br>
+               - se debe promediar la nota del profesor, con otras 2 notas de trabajo.<br>
+               - si el promedio es mayor a 7/10, aprobo la materia.
+               <a href="cofla/H_cofla_10.html">solucion </a>
+           </p>
+           <h3>Callback</h3>
+           <p>
+               callback:es una funcion que se llama dentro de otra funcion.<br>
+               ejemplo:<br>
+               <textarea cols="" rows="">
+                   funcion prueba(cb){
+                       cb("hola")
+                   }
+                   funcion saludar(saludo){
+                       console.log(saludo)
+                   }
+                   prueba(saludar)
+               </textarea>
+           </p>
+           <h3>Promesa</h3>
+           <p>
+               Las promesas son un objeto con dos callback, uno llamado resolve y el otro reject, cada uno representa cosas distientas.<br>
+               uno representa la terminacion de una operacion asincrona.<br>
+               otro representa el fracaso de una operacion asincrona.<br>
+                la promesa tiene los datos en campsulados y para acceder en ellos utilizamos los metodos:<br>
+                promesa.then(): nos permite acceder los que resolve y reject contiene, ademas then es una funcion q recibe un callback.<br>
+           </p>
+           <div class="nota">Nota:then solo mostrara si el result es correcto pero si sale un error podemos manejarlo con catch().</div>
+            <p>
+                con el catch podemos mostras el error sin poner els if constantemento, con un solo catch manejamos todos los errores, epicoo.<br>
+            <p>
+
+            <h3>funciones asincrona</h3>
+           <p>
+            Las funciones asincrona son funciones q se ejecuta en tiempo real.<br>
+            las funcion asincrona son las promesas, async,await.<br>
+            El async es una funcion con una estrocturada normal pero nos permite ejecutar la informacion de manera ordenada.<br>
+            junsto con el await, el await nos permite ver la informacion como el metodo then.<br>
+            estas funciones son mayormente utilizadas para resivir informacion de un servidor.<br>
+        </p>
+        <h3>Historia de clofa 12</h3>
+        <p>Cofla esta en su ultimo año y necesita recuperar todas sus notas para q le puedan decir si efectivamente paso el semestre, de ser asi, cofla ya estaria a un solo paso de finalizar su carrera como inngeniero pero, hay un problemas en el problem
+            estas notas almasenadas en otro servidor.<br>
+
+            <br>
+            - Crear un sistema q almasene toda la informacion de las materias y las muestras en pantalla de forma ordenada.<br>
+
+            <a href="">solucion</a>
+        </p>
+        <h3>peticon HTT</h3>
+        <p>
+            una peticon HTT es peticon que enviamos a un servidor y este nos devuelve los datos.<br>
+            las informaciones de HTT no guarda informacion.<br>
+        
+        </p>
+        <h3>Datos Estructurados (JSON)</h3>
+        <p>
+            un json son objeto pero su diferencia es que las propiedades se declara como string.<br>
+            cuando enviamos un json a un servidor debemos "" y tambien de esa manera lo resivimos.<br>
+            podemos "" con el metodo ( JSON.stringify() ) y para combertilo de nuevo a JSO y trabajar con el se utiliza el metodo.<br>
+            JSON.parse().<br>
+        </p>
+        <h3>AjAX</h3>
+        <p>
+            AJAX significa javascrip asincrono.<br>
+            AJAX se encarga de obtener informacion de un servidor sin recargar la pagina por eso se llama asincrono.<br>
+
+        </p>
+        <h3>Fetch</h3>
+        <p>
+            fetch esta en basado con promesas encapsuladas(no se puede aserder los datos).<br>
+            _ text():desencapsula la promesa
+            _ json(): pasamas el text a json(objet)
+            _ blob(): resive y envia multimedia
+            _ formData():
+            _ arrayBuffer():
+        </p>
         </article>
      
     </main>
+    
     <script src="app.js"></script>
 </body>
 </html> 
